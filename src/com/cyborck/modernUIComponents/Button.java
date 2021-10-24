@@ -107,7 +107,11 @@ public class Button extends Component implements MouseListener {
 
     private void updateSize () {
         int height = 2 * Y_PADDING + getFontMetrics( font ).getHeight();
-        setPreferredSize( new Dimension( width, height ) );
+        Dimension size = new Dimension( width, height );
+        setPreferredSize( size );
+        setMaximumSize( size );
+        setMinimumSize( size );
+        setSize( size );
     }
 
     private void performAction () {

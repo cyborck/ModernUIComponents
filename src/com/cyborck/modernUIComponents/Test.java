@@ -6,7 +6,7 @@ import java.awt.*;
 public class Test {
 
     public static void main ( String[] args ) {
-        Button button = new Button( "HALLO", () -> System.out.println( "Hallo" ), 300 );
+        Button button = new Button( "BUTTON", () -> System.out.println( "Hallo" ), 200 );
         test( button );
     }
 
